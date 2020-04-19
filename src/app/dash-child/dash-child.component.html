@@ -1,0 +1,56 @@
+<p>dash-child works!</p>
+<h1>{{childvar}}</h1>
+<br/>
+
+   <div>
+    <input [value]="person"
+    (input)="person=$event.target.value" #myvalue>
+    <button (click)="clickedme(myvalue)">click karo</button>
+    </div>
+
+
+<div *ngFor="let aa of dadads">
+    <ul>
+        <li>{{aa.r}}</li>
+    </ul>
+</div>
+
+
+<h2 style="background-color: blue;"> this hostListener & hostListener</h2>
+
+    <div appTest>
+        
+<pre>
+  <blockquote>this is a div tag with , where directive [apptest ]is used</blockquote>
+ <p>@hostListener, @hostBinding is used,
+     <br/>
+     host Element: in  directivethe , it is the element where the diective is attached to ex here [[[[div]]]] is host element ,
+     bcoz here we have attached over directive,<br/>
+     the component wherre we use host listener , then componenent is a host listener<br/>
+     host listener is a decorator enable event binding(click, mouseHover) to the host element which we will use inside our
+     directive/componenet to bind mouseEntered , onClickedPerforming (eventListener)<br/>
+     @hostBinding for getting control over style attribute to the host element
+<br>
+  
+ </p>
+ <pre>
+    <code [innerHTML]="code2"></code>
+</pre>
+
+
+</pre>
+<hr>
+<h2 style="background-color: blue;"> this lifecycle hook</h2>
+
+<pre>
+    <code [innerHTML]="code"></code>
+</pre>
+
+    </div>
+
+
+<ng-content></ng-content>
+<h2  style="background-color: blue;">Binding </h2>
+
+<app-binding></app-binding>
+<router-outlet></router-outlet>

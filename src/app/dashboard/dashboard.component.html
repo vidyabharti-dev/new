@@ -1,0 +1,10 @@
+<button mat-button (click)="openDialog()">Confirm box</button>
+
+
+<input #temprefvar>
+<button (click)="clicked(temprefvar)">click me to render data from parent to dialog child</button>
+
+<app-dash-child *ngIf="imdistroying" [childvar]="takingvariable">ngcontent from parent: {{takingvariable}}</app-dash-child>
+
+<br>
+<button >distroy</button>

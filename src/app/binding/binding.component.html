@@ -1,0 +1,78 @@
+<p>binding works!</p>
+
+<h6>binding : two types</h6>
+<ul>
+    <li>one way binding</li>
+    <li>two way data binding</li>
+</ul>
+<ul>
+    <li>one way binding</li>
+    <ul>
+        <li>interpolation : only string 
+        
+
+            <pre><code [innerHTML]="code"></code></pre>
+        </li>
+        <li>property binding[]: here is takes boolean value also<br/>
+            <input type="button" [disabled]="setValueForInput" value="inputbutton">
+        <hr>
+            <button [disabled]="setValueForInput">button enable/disable</button>
+            <br/>
+<pre>
+    <input type"button" [disabled]="setValueForInput">  <pre><code [innerHTML]="codeProperty"></code></pre>
+              <h5>is example for property binding , which upar shown</h5>
+</pre>
+
+<h1>here if we wont use [] binding then in both casee , disabled ="true" or "false" always it input type will bw false,
+    bcoz of this problem we go for [] binding </h1>
+<pre>
+            <input type"button" disabled="true">
+            <input type"button" disabled="false">
+</pre>
+
+<h4>more in property binding<br/>
+    <h5>class binding [ngClass], style binding[ngStyle]</h5>
+    <br>ex: of class binding here [class.Myclass]="true" is added in div tag , which adds classname as Myclass dynamically , u can check in 
+    element(developer tool)<br/>
+    <div [class.Myclass]="true">hii am class binding ex </div>
+    <br>ex: of class binding here [class.Myclass]="classproperty", in .ts classproperty="true/false"  is added in div tag , which adds classname as Myclass dynamically , u can check in 
+    element(developer tool)<br/>
+    <div [style.margin]="stylepro">hii am style binding ex </div>
+    <br>ex: of style binding here [style.Margin]="stylepro", in .ts stylepro="12px" 
+</h4>
+
+
+<h5>
+    Now if we want to add multiple proprty then ngStyle, ngClass we have to use<br>
+    ex: [ngStyle]="proprttyStyle", in .ts file 
+    <pre>
+        <code [innerHtml]="codestyle"></code>
+
+    </pre>in object form <br>
+    <div [ngStyle]="proprttyStyle">hi am ngstle binding</div>
+    ex: [ngClass]='peopertyClass', in .ts file<code></code>
+    <pre>
+        <code [innerHtml]="codeProperty2"></code>
+
+    </pre>in object form 
+    <br>
+    <div [ngClass]="proprttyClass">hi am ngClass binding added class in div , check in tool</div>
+</h5>
+
+<br>
+
+
+
+
+
+
+
+           
+
+           
+        </li>
+    </ul>
+   
+</ul>
+
+
